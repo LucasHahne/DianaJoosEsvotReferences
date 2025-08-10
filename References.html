@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Text Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Georgia", "Times New Roman", serif;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+        color: #333;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 60px 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 40px;
+        font-size: 2.5em;
+        font-weight: 300;
+      }
+
+      .paragraph {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+        color: #555;
+        padding: 0 20px;
+      }
+
+      .paragraph:last-child {
+        margin-bottom: 0;
+      }
+
+      .paragraph::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: #3498db;
+        margin: 0 auto 20px auto;
+      }
+
+      .paragraph:first-child::before {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 40px 20px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        .paragraph {
+          font-size: 1em;
+          padding: 0 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>References</h1>
+      <h3 style="margin-bottom: 2rem">
+        GUIDELINES FOR INSERTION DEPTH OF 2.0 MM AND 2.4 MM SELF-TAPPING
+        CORTICAL SCREWS IN FELINE BONES
+      </h3>
+
+      <div class="paragraph">
+        Murphy TP, Hill CM, Kapatkin AS, Radin A, Shofer FS, Smith GK. Pullout
+        Properties of 3.5-mm AO/ASIF Self-Tapping and Cortex Screws in a Uniform
+        Synthetic Material and in Canine Bone. Veterinary Surgery. 2001
+        May;30(3):253-260.
+      </div>
+
+      <div class="paragraph">
+        Yerby S, Scott CC, Evans NJ, Messing KL, Carter DR. Effect of Cutting
+        Flute Design on Cortical Bone Screw Insertion Torque and Pullout
+        Strength. Journal of Orthopedic Trauma. 2001 Mar;15(3):216-221.
+      </div>
+      <div class="paragraph">
+        Baumgart FW, Cordey J, Morikawa K, Perren SM, Rahn BA, Schavan R, Snyder
+        S. AO/ASIF self-tapping screws (STS). Injury. 1993 Jan;24:1-17.
+      </div>
+
+      <div class="paragraph">
+        Tencer A, Harrington R, Chapman J. Biomechanics of cannulated and
+        noncannulated screws. In: Principles and Operative Techniques. New York:
+        Springer; 1996.
+      </div>
+
+      <div class="paragraph">
+        Schoenfeld A, Vrabec G, Battula S, Salvator A, Njus G. Pullout Strength
+        Variance Among Self-Tapping Screws Inserted to Different Depths.
+      </div>
+      <div class="paragraph">
+        Schoenfeld AJ, Battula S, Sahai V, Vrabec GA, Corman S, Burton L, Njus
+        GO. Pullout Strength and Load to Failure Properties of Self-Tapping
+        Cortical Screws in Synthetic and Cadaveric Environments Representative
+        of Healthy and Osteoporotic Bone. Journal of Trauma: Injury, Infection &
+        Critical Care. 2008 May;64(5):1302-1307.
+      </div>
+      <div class="paragraph">
+        Berkowitz R, Njus G, Vrabec G. Pullout Strength of Self-Tapping Screws
+        Inserted to Different Depths. Journal of Orthopaedic Trauma. 2005
+        Aug;19(7):462-465.
+      </div>
+      <div class="paragraph">
+        Seebeck J, Goldhahn J, Städele H, Messmer P, Morlock MM, Schneider E.
+        Effect of cortical thickness and cancellous bone density on the holding
+        strength of internal fixator screws. Journal Orthopaedic Research. 2004
+        Nov;22(6):1237-1242.
+      </div>
+      <div class="paragraph">
+        F543-02 A. Standard Specification and Test Methods for Metallic Medical
+        Bone Screws. ASTM International; 2007.
+      </div>
+    </div>
+  </body>
+</html>
